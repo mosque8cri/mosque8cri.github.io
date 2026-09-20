@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="羽扇纶巾笑谈间 - 探索中国古典文学中的智慧与谋略，品味三国人物的风雅与从容。提供经典文章赏析、人物传记、历史典故及现代解读。">
+    <meta name="keywords" content="羽扇纶巾, 三国, 智慧, 谋略, 历史典故, 诸葛亮, 鲁肃, 风雅, 古典文学">
+    <title>羽扇纶巾笑谈间 - 历史典故与古典智慧赏析</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #5d4037;
+            --secondary-color: #8d6e63;
+            --accent-color: #c0392b;
+            --bg-color: #fdfbf7;
+            --text-color: #333333;
+            --light-text: #666666;
+            --border-color: #e0e0e0;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --hero-bg: linear-gradient(135deg, #fdfbf7 0%, #e8e6e1 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "SimSun", serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-family: "Kaiti SC", "STKaiti", serif;
+            font-style: italic;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .search-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: all 0.3s;
+        }
+
+        .search-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--hero-bg);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero::before {
+            content: "「";
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            font-size: 8rem;
+            color: rgba(141, 110, 99, 0.1);
+            font-family: serif;
+        }
+
+        .hero::after {
+            content: "」";
+            position: absolute;
+            bottom: 20px;
+            right: 50px;
+            font-size: 8rem;
+            color: rgba(141, 110, 99, 0.1);
+            font-family: serif;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-family: "Kaiti SC", "STKaiti", serif;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-family: "Kaiti SC", "STKaiti", serif;
+        }
+
+        .section-title p {
+            color: var(--light-text);
+        }
+
+        /* Featured Section */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .featured-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .featured-content {
+            padding: 30px;
+        }
+
+        .featured-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .featured-content p {
+            color: var(--light-text);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--accent-color);
+            font-weight: bold;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        .side-list {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .side-list h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .side-list li {
+            margin-bottom: 15px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .side-list li:last-child {
+            border-bottom: none;
+        }
+
+        .side-list a {
+            display: block;
+            font-size: 1.05rem;
+            color: var(--text-color);
+        }
+
+        .side-list span {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Content Grid */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-wrapper {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-tag {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            margin-bottom: 15px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .quote-text {
+            font-size: 1.5rem;
+            font-family: "Kaiti SC", "STKaiti", serif;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .quote-author {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #fff;
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .feature-item {
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-item h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-item p {
+            color: var(--light-text);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none; /* Simplified for single file, normally would be a hamburger menu */
+            }
+            
+            .nav-wrapper {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>羽扇纶巾笑谈间</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">人物列传</a></li>
+                    <li><a href="#">经典战例</a></li>
+                    <li><a href="#">历史解读</a></li>
+                    <li><a href="#">文房雅集</a></li>
+                </ul>
+            </nav>
+            <button class="search-btn">搜索</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>羽扇纶巾笑谈间</h1>
+            <p>于谈笑风生中运筹帷幄，在历史长河中品味智慧与风雅。探索三国人物的深邃谋略与文人风骨。</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <div class="section-title">
+            <h2>本期精选</h2>
+            <p>重温那些令人心驰神往的历史瞬间</p>
+        </div>
+
+        <section class="featured-grid">
+            <article class="featured-card">
+                <img src="https://picsum.photos/seed/history1/800/400" alt="赤壁之战示意图" class="featured-img">
+                <div class="featured-content">
+                    <h3>赤壁谈兵：火攻背后的深谋远虑</h3>
+                    <p>在“羽扇纶巾笑谈间”的表象之下，是周瑜与诸葛亮对于天时、地利、人和的极致把握。本文深入剖析赤壁之战中草船借箭、借东风等经典桥段的战略逻辑。</p>
+                    <a href="#" class="read-more">阅读全文 &rarr;</a>
+                </div>
+            </article>
+            
+            <aside>
+                <div class="side-list">
+                    <h3>热门典故</h3>
+                    <ul>
+                        <li>
+                            <a href="#">单刀赴会：鲁肃的胆识与气度</a>
+                            <span>鲁肃，字子敬</span>
+                        </li>
+                        <li>
+                            <a href="#">空城计：司马懿的迟疑与孔明的镇定</a>
+                            <span>街亭失守后</span>
+                        </li>
+                        <li>
+                            <a href="#">苦肉计：黄盖的忠烈与周瑜的机智</a>
+                            <span>阚泽下书</span>
+                        </li>
+                        <li>
+                            <a href="#">白帝托孤：君臣相得的千古绝唱</a>
+                            <span>刘备病危</span>
+                        </li>
+                        <li>
+                            <a href="#">七擒孟获：攻心为上的政治智慧</a>
+                            <span>南中平定</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <div class="section-title">
+            <h2>人物画廊</h2>
+            <p>描绘那些风华绝代的智者形象</p>
+        </div>
+
+        <section class="grid-layout">
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/zhuge/400/300" alt="诸葛亮画像">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">蜀汉</span>
+                    <h3>卧龙先生：鞠躬尽瘁，死而后已</h3>
+                    <p>羽扇纶巾，羽扇纶巾。诸葛亮不仅是军事家，更是治国能臣。他在乱世中维持蜀汉的平衡，其智慧与忠诚是后世无数文人墨客的楷模。</p>
+                    <div class="meta-info">
+                        <span>2023-10-24</span>
+                        <span>12,580 阅读</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/lusu/400/300" alt="鲁肃画像">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">东吴</span>
+                    <h3>子敬之风：宽厚长者的战略眼光</h3>
+                    <p>鲁肃虽无诸葛亮之术，却有海纳百川之量。他在赤壁之战前极力促成孙刘联盟，是三国历史上不可或缺的润滑剂与战略家。</p>
+                    <div class="meta-info">
+                        <span>2023-10-22</span>
+                        <span>8,320 阅读</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/caocao/400/300" alt="曹操画像">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">曹魏</span>
+                    <h3>孟德之雄：乱世枭雄的豪情与悲歌</h3>
+                    <p>横槊赋诗，望梅止渴。曹操的才华横溢与权谋手段并存。他的一生是“羽扇纶巾”中另一种豪迈的诠释，是征服与被征服的史诗。</p>
+                    <div class="meta-info">
+                        <span>2023-10-20</span>
+                        <span>15,100 阅读</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/sima/400/300" alt="司马懿画像">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">隐忍</span>
+                    <h3>冢虎之谋：隐忍待发的终极智慧</h3>
+                    <p>司马懿的一生是隐忍的艺术。他看透了“羽扇纶巾”背后的杀机，在漫长的博弈中，最终实现了“笑谈间”夺取天下的壮举。</p>
+                    <div class="meta-info">
+                        <span>2023-10-18</span>
+                        <span>9,450 阅读</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="quote-section">
+            <div class="container">
+                <p class="quote-text">“谈笑间，樯橹灰飞烟灭。”</p>
+                <p class="quote-author">—— 苏轼《念奴娇·赤壁怀古》</p>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <h2>文房雅集</h2>
+            <p>品味三国时期的诗词歌赋与文人风骨</p>
+        </div>
+
+        <section class="grid-layout">
+            <article class="card">
+                <div class="card-content" style="height: auto;">
+                    <span class="card-tag">诗词赏析</span>
+                    <h3>《短歌行》：忧思与壮志的交响</h3>
+                    <p>对酒当歌，人生几何？曹操在月下横槊时，心中所想的是天下归一。这首诗不仅是政治宣言，更是千古绝唱。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content" style="height: auto;">
+                    <span class="card-tag">书法鉴赏</span>
+                    <h3>《兰亭序》：魏晋风度的极致体现</h3>
+                    <p>虽非三国直接产物，但魏晋风度与三国乱世紧密相连。王羲之的飘逸与张旭的狂草，皆是那个时代的灵魂注脚。</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content" style="height: auto;">
+                    <span class="card-tag">历史小说</span>
+                    <h3>《三国演义》的文学魅力</h3>
+                    <p>罗贯中笔下的“羽扇纶巾”形象，超越了历史真实，成为了智慧与儒雅的代名词，影响了东亚文化圈数百年。</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📜</div>
+                    <h3>详实史料</h3>
+                    <p>结合《三国志》与《资治通鉴》，还原最真实的历史场景，去伪存真。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>深度解析</h3>
+                    <p>不只讲故事，更深入分析兵法谋略与政治博弈背后的逻辑。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>文化传承</h3>
+                    <p>探讨三国文化对后世文学、艺术及民族性格的深远影响。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <span>羽扇纶巾笑谈间</span>
+                    </div>
+                    <p>致力于传播中国古典历史文化的精神内核，让读者在快节奏的现代生活中，寻得一份从容与智慧。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>栏目导航</h4>
+                    <ul>
+                        <li><a href="#">人物列传</a></li>
+                        <li><a href="#">经典战役</a></li>
+                        <li><a href="#">谋略智慧</a></li>
+                        <li><a href="#">历史小说</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">网站简介</a></li>
+                        <li><a href="#">投稿指南</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系方式</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 羽扇纶巾笑谈间. All Rights Reserved. 历史文化鉴赏平台.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇异之旅-探索未知世界的奇幻冒险指南</title>
+    <meta name="description" content="奇异之旅为您提供全球最具创意的奇幻冒险指南，涵盖异世界、时空穿越、神秘遗迹探索等主题，助您开启脑洞大开的奇幻旅程。">
+    <meta name="keywords" content="奇异之旅,奇幻冒险,异世界,时空穿越,神秘遗迹">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-dark: #1a1a2e;
+            --bg-card: #16213e;
+            --text-light: #ecf0f1;
+            --text-gray: #bdc3c7;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-size: 1rem;
+            color: var(--text-light);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/strange/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background-color: var(--bg-dark);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        /* Journey Cards */
+        .journeys {
+            padding: 4rem 0;
+            background-color: #151525;
+        }
+
+        .journey-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .journey-card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .journey-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .journey-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .journey-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .journey-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .journey-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .journey-desc {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .journey-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* Guide Section */
+        .guide-section {
+            padding: 4rem 0;
+            background-color: var(--bg-dark);
+        }
+
+        .guide-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+        }
+
+        .guide-sidebar {
+            background-color: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            height: fit-content;
+        }
+
+        .guide-list li {
+            margin-bottom: 1rem;
+        }
+
+        .guide-list a {
+            display: block;
+            padding: 0.8rem 1rem;
+            border-radius: var(--border-radius);
+            color: var(--text-gray);
+            border-left: 3px solid transparent;
+        }
+
+        .guide-list a:hover, .guide-list a.active {
+            background-color: rgba(230, 126, 34, 0.1);
+            color: var(--accent-color);
+            border-left-color: var(--accent-color);
+        }
+
+        .guide-content h2 {
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .guide-content p {
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: var(--text-gray);
+            display: none;
+            padding-left: 1rem;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f0f1a;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+
+            .guide-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span>✦</span> 奇异之旅
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero">首页</a></li>
+                    <li><a href="#journeys">热门旅程</a></li>
+                    <li><a href="#guide">探索指南</a></li>
+                    <li><a href="#community">社区</a></li>
+                </ul>
+                <a href="#start" class="btn">开启旅程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1>奇异之旅</h1>
+                <p>打破现实的边界，探索未知的维度。在这里，每一个选择都通向一个全新的世界。准备好迎接你的第一场冒险了吗？</p>
+                <a href="#journeys" class="btn">浏览旅程</a>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>多维世界</h3>
+                        <p>从赛博朋克都市到中世纪魔法森林，体验截然不同的文化与生态系统。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>脑洞剧情</h3>
+                        <p>精心设计的非线性叙事，你的每一个决定都将影响旅行的最终结局。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>沉浸视听</h3>
+                        <p>顶级视听体验，配合动态环境音效，让你仿佛真的置身于异世界之中。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Showcase -->
+        <section id="journeys" class="journeys">
+            <div class="container">
+                <h2 class="section-title">热门探索路线</h2>
+                <div class="journey-grid">
+                    <!-- Card 1 -->
+                    <article class="journey-card">
+                        <img src="https://picsum.photos/seed/cyberpunk/400/300.jpg" alt="霓虹深渊" class="journey-img">
+                        <div class="journey-content">
+                            <span class="journey-tag">科幻 / 赛博朋克</span>
+                            <h3 class="journey-title">霓虹深渊：数据幽灵</h3>
+                            <p class="journey-desc">2077年的地下世界，你是一名黑客，试图逃离被AI控制的公司。在层层防火墙中寻找自由。</p>
+                            <div class="journey-meta">
+                                <span>难度：★★★☆☆</span>
+                                <span>时长：25分钟</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="journey-card">
+                        <img src="https://picsum.photos/seed/magic/400/300.jpg" alt="迷雾森林" class="journey-img">
+                        <div class="journey-content">
+                            <span class="journey-tag">奇幻 / 冒险</span>
+                            <h3 class="journey-title">迷雾森林的低语</h3>
+                            <p class="journey-desc">古老的森林中流传着关于时间循环的传说。你将在这里解开精灵族失落千年的秘密。</p>
+                            <div class="journey-meta">
+                                <span>难度：★★★★☆</span>
+                                <span>时长：40分钟</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="journey-card">
+                        <img src="https://picsum.photos/seed/space/400/300.jpg" alt="星际彼岸" class="journey-img">
+                        <div class="journey-content">
+                            <span class="journey-tag">太空 / 悬疑</span>
+                            <h3 class="journey-title">星际彼岸：寂静信号</h3>
+                            <p class="journey-desc">飞船航行至银河边缘，接收到一段无法破译的信号。是文明的呼唤，还是深渊的凝视？</p>
+                            <div class="journey-meta">
+                                <span>难度：★★★★★</span>
+                                <span>时长：60分钟</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="guide-section">
+            <div class="container">
+                <h2 class="section-title">探索指南与FAQ</h2>
+                <div class="guide-container">
+                    <aside class="guide-sidebar">
+                        <ul class="guide-list">
+                            <li><a href="#faq-intro" class="active">什么是奇异之旅？</a></li>
+                            <li><a href="#faq-tech">技术要求与设备</a></li>
+                            <li><a href="#faq-story">如何推进剧情？</a></li>
+                            <li><a href="#faq-credit">获取成就与勋章</a></li>
+                        </ul>
+                    </aside>
+                    <div class="guide-content">
+                        <article id="faq-intro">
+                            <h2>什么是奇异之旅？</h2>
+                            <p>“奇异之旅”是一个集合了互动叙事、虚拟现实体验与角色扮演的综合性平台。它不仅仅是简单的游戏或小说，而是一个能够根据用户反馈实时调整环境与剧情的动态世界。在这里，您可以体验从未有过的视角，挑战常规的逻辑思维。</p>
+                            <p>平台目前支持多种类型的旅程，包括但不限于科幻、奇幻、悬疑和恐怖题材，满足不同用户的探索欲望。</p>
+                        </article>
+                        <article id="faq-tech">
+                            <h2>技术要求与设备</h2>
+                            <p>为了保证最佳的沉浸式体验，建议使用支持WebGL 2.0的浏览器。设备方面，推荐配备独立显卡的PC端设备，以获得流畅的画质和光影效果。移动端用户亦可通过触控操作进行体验，但建议在Wi-Fi环境下运行以节省流量。</p>
+                        </article>
+                        <article id="faq-story">
+                            <h2>如何推进剧情？</h2>
+                            <p>在旅程中，您将面临多个关键的决策节点。这些决策通常通过对话选项、物品收集或环境互动来体现。我们的系统会根据您的选择实时生成后续剧情分支，因此没有所谓的“正确答案”，只有属于您自己的独特旅程。</p>
+                        </article>
+                        <article id="faq-credit">
+                            <h2>获取成就与勋章</h2>
+                            <p>完成特定的隐藏任务、解锁所有结局或探索地图中的隐藏区域，都有可能获得特殊的勋章。这些勋章不仅是对您探索能力的认可，也可以在个人主页展示，与其他旅者交流心得。</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于奇异之旅</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">
+                        致力于为全球用户提供最前沿的沉浸式互动体验，打破虚拟与现实的界限。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>探索分类</h4>
+                    <ul>
+                        <li><a href="#">科幻未来</a></li>
+                        <li><a href="#">中世纪幻想</a></li>
+                        <li><a href="#">深海探索</a></li>
+                        <li><a href="#">末日废土</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="#">用户手册</a></li>
+                        <li><a href="#">联系客服</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 奇异之旅. 保留所有权利. 本网站为概念设计展示。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Accordion Logic
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Smooth Scroll for Navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

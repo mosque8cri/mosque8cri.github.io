@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="老师教我插她 - 提供专业的插花基础教学与实战指南，从花材选择到造型设计，帮助初学者掌握插花艺术。">
+    <meta name="keywords" content="老师教我插她,插花教学,花艺入门,插花技巧,花材搭配">
+    <title>老师教我插她-专业花艺基础教学与实战指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --bg-color: #fdfbf7;
+            --text-color: #333;
+            --light-text: #666;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --spacing-unit: 20px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: var(--light-text);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbf7 0%, #e8d5c4 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #ba4a00;
+            transform: translateY(-2px);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        /* Step by Step Guide */
+        .steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .step-item {
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .step-content h3 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        /* Material Guide */
+        .material-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .material-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .material-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .material-card h4 {
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: #fff;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--light-text);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 200px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bbb;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .nav-links {
+                display: none;
+            }
+            .section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                老师教我插花
+            </a>
+            <nav class="nav-links">
+                <a href="#basics">基础入门</a>
+                <a href="#steps">步骤详解</a>
+                <a href="#materials">花材选择</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>老师教我插花<br>从零开始掌握花艺艺术</h1>
+                <p>无论你是花艺初学者还是希望提升技巧的爱好者，这里都有最实用的教学视频、图文步骤和避坑指南。让每一朵花都绽放出最美的姿态。</p>
+                <a href="#steps" class="cta-button">开始学习插花</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <div class="container">
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <span class="feature-icon">📚</span>
+                        <h3>系统教程</h3>
+                        <p>从花材认知到构图原理，提供分阶段的系统性学习路径，适合零基础学员。</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">🎥</span>
+                        <h3>视频演示</h3>
+                        <p>高清慢动作演示关键修剪与组合技巧，细节一目了然，学习更直观。</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">💡</span>
+                        <h3>避坑指南</h3>
+                        <p>汇集新手最常犯的错误，提供专业的解决方案，帮你少走弯路。</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">🌸</span>
+                        <h3>花材库</h3>
+                        <p>详细介绍常见花材的特性、养护方法和搭配禁忌，做懂花的行家。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps Section -->
+        <section id="steps" class="section" style="background-color: #fff;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>新手插花三步走</h2>
+                    <p>掌握这三个核心步骤，你也能做出专业的花艺作品</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>选材与预处理</h3>
+                            <p>根据插花风格选择合适的花材。修剪枝叶时注意保留自然形态，去除枯萎部分。对于木本枝条，要斜剪45度以增加吸水面积。使用专业花艺剪刀，确保切口平滑。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>确定主次与骨架</h3>
+                            <p>确定作品的主花（视觉中心）和配花。先构建作品的骨架，即主要枝干和叶片的布局，确立高、宽、深的比例。通常遵循“高、中、低”三个层次，确保重心稳固。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>填充与修饰</h3>
+                            <p>在骨架基础上，填充较小的花材和叶材，使画面丰满但不拥挤。最后进行整体调整，检查角度、疏密关系和色彩平衡。插花讲究“疏可走马，密不透风”。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Section -->
+        <section id="materials" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见花材推荐</h2>
+                    <p>认识这些花材，你的作品将更上一层楼</p>
+                </div>
+                <div class="material-grid">
+                    <div class="material-card">
+                        <img src="https://picsum.photos/seed/rose/300/200" alt="玫瑰">
+                        <h4>玫瑰</h4>
+                        <p style="font-size: 0.85rem; color: #666;">浪漫经典，色彩丰富，适合表达情感。</p>
+                    </div>
+                    <div class="material-card">
+                        <img src="https://picsum.photos/seed/lily/300/200" alt="百合">
+                        <h4>百合</h4>
+                        <p style="font-size: 0.85rem; color: #666;">香气浓郁，线条优美，适合中式插花。</p>
+                    </div>
+                    <div class="material-card">
+                        <img src="https://picsum.photos/seed/tulip/300/200" alt="郁金香">
+                        <h4>郁金香</h4>
+                        <p style="font-size: 0.85rem; color: #666;">简约现代，姿态优雅，易搭配。</p>
+                    </div>
+                    <div class="material-card">
+                        <img src="https://picsum.photos/seed/fern/300/200" alt="尤加利叶">
+                        <h4>尤加利叶</h4>
+                        <p style="font-size: 0.85rem; color: #666;">清新自然，香气独特，常用作配叶。</p>
+                    </div>
+                    <div class="material-card">
+                        <img src="https://picsum.photos/seed/sunflower/300/200" alt="向日葵">
+                        <h4>向日葵</h4>
+                        <p style="font-size: 0.85rem; color: #666;">阳光明媚，生命力旺盛，适合日式风格。</p>
+                    </div>
+                    <div class="material-card">
+                        <img src="https://picsum.photos/seed/ivy/300/200" alt="常春藤">
+                        <h4>常春藤</h4>
+                        <p style="font-size: 0.85rem; color: #666;">垂坠感强，适合制作花环或悬挂装饰。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section" style="background-color: #fff;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>新手在插花过程中最关心的几个问题</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">插花需要准备哪些工具？</div>
+                        <div class="faq-answer">主要需要花艺剪刀（建议使用专业斜口剪）、花瓶、花泥（如果是干花或造型需要）、切花刀以及保鲜剂或营养液。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">花瓶里的水需要几天换一次？</div>
+                        <div class="faq-answer">建议每1-2天更换一次清水，并在水中加入少许漂白水或专用保鲜剂，以防止细菌滋生，延长花期。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何判断花材是否新鲜？</div>
+                        <div class="faq-answer">看花瓣是否有光泽，花苞是否饱满紧实；摸叶子是否挺拔有弹性；闻是否有刺鼻的化学药剂味或腐烂味。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">插花作品放在家里哪里最好？</div>
+                        <div class="faq-answer">应避免阳光直射、靠近热源或空调出风口，最好放置在通风良好、散射光充足的地方，如书桌、茶几或玄关。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" style="flex: 2; min-width: 300px;">
+                    <div class="logo" style="color: white; margin-bottom: 15px;">老师教我插花</div>
+                    <p style="color: #bbb; max-width: 400px;">
+                        致力于为花艺爱好者提供最专业、最易懂的插花教学资源。无论你是为了装饰家居，还是学习一门新技能，这里都是你最好的起点。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#basics">基础入门</a></li>
+                        <li><a href="#steps">步骤详解</a></li>
+                        <li><a href="#materials">花材库</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">投稿合作</a></li>
+                        <li><a href="#">加入社群</a></li>
+                        <li><a href="#">商业咨询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 老师教我插花. All Rights Reserved. 仅供学习交流使用.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

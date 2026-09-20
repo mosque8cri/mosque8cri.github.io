@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="玄奘寺住持社交账号曝光事件深度解析。本站提供事件脉络梳理、舆论焦点分析、相关背景资料及官方回应，致力于提供客观、准确的信息参考。">
+    <meta name="keywords" content="玄奘寺住持社交账号曝光, 玄奘寺, 释坚宽, 社交媒体, 事件分析, 舆情观察">
+    <title>玄奘寺住持社交账号曝光-事件脉络与舆情分析</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        nav a.active, nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 内容区域 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* 文章列表 */
+        .article-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 240px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+
+        .article-body {
+            padding: 24px;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .article-title {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--primary-color);
+        }
+
+        .article-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            font-weight: 600;
+            color: var(--accent-color);
+            border-bottom: 2px solid transparent;
+        }
+
+        .read-more:hover {
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* 侧边栏 */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--bg-color);
+            color: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 20px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+        }
+
+        .timeline-date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .timeline-content {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: var(--bg-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* 焦点区域 */
+        .focus-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .focus-card {
+            background: rgba(255,255,255,0.1);
+            padding: 24px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .focus-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        .focus-card p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
+            padding: 40px 0;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links a {
+            margin-left: 20px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+                gap: 16px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .footer-links a {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>▲</span> 玄奘寺舆情观察
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">事件首页</a></li>
+                    <li><a href="#timeline">时间脉络</a></li>
+                    <li><a href="#analysis">深度分析</a></li>
+                    <li><a href="#background">背景资料</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>玄奘寺住持社交账号曝光事件</h1>
+            <p>从网络曝光到官方调查，深度梳理这一引发社会广泛关注的宗教场所管理事件，还原事实真相。</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="content-grid">
+            <!-- 左侧主要文章流 -->
+            <div class="main-content">
+                
+                <article class="article-card">
+                    <img src="https://picsum.photos/seed/buddha/800/400" alt="寺庙建筑" class="article-image">
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span>2022年7月22日</span>
+                            <span>•</span>
+                            <span>事件追踪</span>
+                        </div>
+                        <h2 class="article-title">南京玄奘寺住持被曝私藏“精日”账号，官方连夜成立调查组</h2>
+                        <p class="article-excerpt">
+                            7月22日，网络流传出南京玄奘寺住持释坚宽社交账号的聊天记录截图，内容涉及对侵华日军的崇拜言论，引发舆论哗然。南京市委市政府高度重视，立即成立调查组，对玄奘寺管理及释坚宽个人情况展开全面彻查。
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span>2022年7月23日</span>
+                            <span>•</span>
+                            <span>官方通报</span>
+                        </div>
+                        <h2 class="article-title">南京市委市政府通报：释坚宽已被撤职，寺庙全面整顿</h2>
+                        <p class="article-excerpt">
+                            7月23日晚，南京市委市政府发布通报，确认南京玄奘寺内供奉牌位者系吴啊萍。释坚宽作为住持，对寺庙管理严重失职，对发生严重违背社会公序良俗事件负有不可推卸的责任。决定给予释坚宽撤销佛教协会理事职务，并责令其退还宗教活动场所所有收入，按程序开除出教。
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span>2022年7月24日</span>
+                            <span>•</span>
+                            <span>深度评论</span>
+                        </div>
+                        <h2 class="article-title">宗教场所管理亟待加强：如何防止“衣冠禽兽”混入佛门？</h2>
+                        <p class="article-excerpt">
+                            玄奘寺事件不仅是一起个人行为失范事件，更暴露了部分宗教活动场所管理上的漏洞。从选拔机制到日常监督，如何构建一套严密的准入和退出机制，防止有严重不良倾向的人员进入宗教队伍，是当前宗教管理工作中必须正视的问题。
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- 右侧侧边栏 -->
+            <aside>
+                <div class="sidebar-widget" id="timeline">
+                    <h3 class="widget-title">事件时间脉络</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月22日</div>
+                        <div class="timeline-content">网络曝光玄奘寺住持社交账号内容</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月22日</div>
+                        <div class="timeline-content">南京市委市政府成立调查组</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月23日</div>
+                        <div class="timeline-content">查明供奉者身份为吴啊萍</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月23日</div>
+                        <div class="timeline-content">释坚宽被撤职并开除出教</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月24日</div>
+                        <div class="timeline-content">南京警方对吴啊萍依法审查</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">关键词标签</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">#释坚宽</span>
+                        <span class="tag">#南京玄奘寺</span>
+                        <span class="tag">#吴啊萍</span>
+                        <span class="tag">#宗教管理</span>
+                        <span class="tag">#精日言论</span>
+                        <span class="tag">#撤职</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">相关背景</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+                        玄奘寺位于南京市玄武区，是为纪念唐代高僧玄奘而立，是南京市重点文物保护单位之一。此次事件对寺庙声誉造成了极大的负面影响。
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <section class="focus-section" id="analysis">
+        <div class="container">
+            <h2 style="font-size: 1.8rem; margin-bottom: 32px; border-left: 4px solid white; padding-left: 16px;">事件深度分析</h2>
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <h3>个人信仰与公共责任的冲突</h3>
+                    <p>作为宗教场所负责人，释坚宽不仅代表了个人，更代表了寺庙和宗教团体的形象。其言论严重违背了社会公序良俗，挑战了公众的底线。</p>
+                </div>
+                <div class="focus-card">
+                    <h3>寺庙内部管理的漏洞</h3>
+                    <p>牌位供奉长达数年未被察觉，反映出寺庙在内部日常巡查和人员管理上存在严重疏漏，未能及时发现和纠正违规行为。</p>
+                </div>
+                <div class="focus-card">
+                    <h3>网络时代的信息传播</h3>
+                    <p>社交账号的曝光方式再次印证了网络监督的力量。同时也提醒公众，在转发未经证实的网络信息时需保持理性，等待官方调查结果。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <p>&copy; 2022-2023 玄奘寺舆情观察. All Rights Reserved.</p>
+                <p style="margin-top: 8px; font-size: 0.8rem; color: #7f8c8d;">本页面内容仅供信息参考，不构成任何投资或行为建议。</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">免责声明</a>
+                <a href="#">联系合作</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="花都区合和新城官方资讯门户，提供楼盘详情、户型图、周边配套、交通路线、房价走势及购房指南。关注合和新城，了解花都新城区发展与居住价值。">
+    <meta name="keywords" content="花都区合和新城, 合和新城, 花都楼盘, 广州合和新城, 合和新城房价, 合和新城户型, 花都购房指南">
+    <title>花都区合和新城 - 楼盘详情、购房指南与生活配套全攻略</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00a8e8;
+            --accent-color: #ffc107;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f8f9fa;
+            --bg-white: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 50, 100, 0.6), rgba(0, 50, 100, 0.6)), url('https://picsum.photos/seed/foshan_cityscape/1920/800') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-tags {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            backdrop-filter: blur(4px);
+        }
+
+        /* Project Overview */
+        .overview {
+            padding: 60px 0;
+            background-color: var(--bg-white);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .project-info h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .info-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: baseline;
+        }
+
+        .info-label {
+            font-weight: 700;
+            width: 100px;
+            flex-shrink: 0;
+            color: var(--text-gray);
+        }
+
+        .info-value {
+            color: var(--text-dark);
+        }
+
+        .project-gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Advantages */
+        .advantages {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        /* Location & Transport */
+        .location-section {
+            padding: 60px 0;
+        }
+
+        .location-map-placeholder {
+            width: 100%;
+            height: 400px;
+            background-color: #e9ecef;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+            background-image: url('https://picsum.photos/seed/map_texture/1200/400?grayscale');
+            background-size: cover;
+            position: relative;
+        }
+        
+        .location-map-placeholder::after {
+            content: "合和新城 - 花都区新华街中心位置示意图";
+            position: absolute;
+            background: rgba(255,255,255,0.9);
+            padding: 20px 40px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .transport-list {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .transport-item {
+            background: var(--bg-white);
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .transport-item h4 {
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 60px 0;
+            background-color: var(--bg-white);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            margin-top: 12px;
+            color: var(--text-gray);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+        
+        .faq-item:not(.active) .faq-question::after {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .nav-container nav.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9"/></svg>
+                <span>合和新城</span>置业
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#overview" class="active">楼盘概况</a></li>
+                    <li><a href="#features">核心优势</a></li>
+                    <li><a href="#location">周边配套</a></li>
+                    <li><a href="#guide">购房指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>花都区合和新城</h1>
+                <p>位于花都区新华街核心地段，集居住、商业、教育于一体的现代化大型社区。交通便利，配套成熟，是花都新城区发展的标杆项目。</p>
+                <div class="hero-tags">
+                    <span class="tag">花都CBD</span>
+                    <span class="tag">三地铁交汇</span>
+                    <span class="tag">名校环伺</span>
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="#overview" class="btn btn-primary">了解详情</a>
+                    <a href="#location" class="btn btn-outline" style="color: white; border-color: white; margin-left: 10px;">查看地图</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="overview">
+            <div class="container">
+                <div class="section-title">
+                    <span>楼盘概况</span>
+                </div>
+                <div class="grid-2">
+                    <div class="project-info">
+                        <h2>合和新城项目介绍</h2>
+                        <p style="margin-bottom: 20px; color: var(--text-gray);">
+                            合和新城是合和实业（中国）有限公司在花都区新华街重点打造的标杆项目，占地面积广阔，规划有住宅、商业街、幼儿园及会所等完善配套。项目紧邻花都广场及新华公园，是花都区最具影响力的城市更新项目之一。
+                        </p>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-label">开发商：</span>
+                                <span class="info-value">合和实业（中国）有限公司</span>
+                            </li>
+                            <li>
+                                <span class="info-label">物业公司：</span>
+                                <span class="info-value">合和物业</span>
+                            </li>
+                            <li>
+                                <span class="info-label">建筑类型：</span>
+                                <span class="info-value">高层住宅、洋房</span>
+                            </li>
+                            <li>
+                                <span class="info-label">绿化率：</span>
+                                <span class="info-value">35%以上</span>
+                            </li>
+                            <li>
+                                <span class="info-label">总户数：</span>
+                                <span class="info-value">约3000+户</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="https://picsum.photos/seed/building_complex/600/400" alt="合和新城项目实景图">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="advantages">
+            <div class="container">
+                <div class="section-title">
+                    <span>核心优势</span>
+                    <a href="#" style="font-size: 14px; color: var(--primary-color);">查看全部 ></a>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚇</div>
+                        <h3>交通便捷</h3>
+                        <p>项目周边拥有地铁9号线、18号线（规划中）及多条公交线路，轻松连接广州北站及广州中心城区，通勤高效。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>教育资源</h3>
+                        <p>周边配套多所优质中小学及幼儿园，涵盖从幼儿园到高中的全龄段教育体系，助力孩子成长。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌳</div>
+                        <h3>生态宜居</h3>
+                        <p>紧邻花都广场、新华公园及雅瑶水库，拥有超大面积的绿地与水系，空气清新，是天然的“城市氧吧”。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛍️</div>
+                        <h3>商业繁华</h3>
+                        <p>自带大型商业综合体及沿街旺铺，满足日常购物、餐饮、娱乐等一站式生活需求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Transport Section -->
+        <section id="location" class="location-section">
+            <div class="container">
+                <div class="section-title">
+                    <span>区位与交通</span>
+                </div>
+                <div class="location-map-placeholder">
+                    <!-- Placeholder for Map -->
+                </div>
+                <div class="transport-list">
+                    <div class="transport-item">
+                        <h4>🚗 道路交通</h4>
+                        <p>项目位于花都区新华街中心地带，紧邻建设大道、云山大道及广清高速入口，自驾出行极其便利。</p>
+                    </div>
+                    <div class="transport-item">
+                        <h4>🚇 地铁出行</h4>
+                        <p>步行可达地铁9号线花都广场站，接驳广州北站，实现“地铁+高铁”无缝换乘。</p>
+                    </div>
+                    <div class="transport-item">
+                        <h4>🏥 公共设施</h4>
+                        <p>周边分布有花都区人民医院、中医院等三甲医院，医疗资源丰富，健康有保障。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="overview" style="background-color: var(--bg-light);">
+            <div class="container">
+                <div class="section-title">
+                    <span>购房指南</span>
+                </div>
+                <div class="grid-2">
+                    <article>
+                        <h3 style="margin-bottom: 10px; font-size: 20px;">如何选择户型？</h3>
+                        <p style="margin-bottom: 15px; color: var(--text-gray);">
+                            合和新城主力户型涵盖两房至四房，部分户型朝南设计，采光极佳。建议根据家庭人口结构选择，两房适合刚需自住，三房及以上适合改善型需求。购买时可重点关注通风与采光条件。
+                        </p>
+                        <a href="#" class="btn btn-outline" style="font-size: 14px; padding: 8px 16px;">查看户型图</a>
+                    </article>
+                    <article>
+                        <h3 style="margin-bottom: 10px; font-size: 20px;">产权与贷款须知</h3>
+                        <p style="margin-bottom: 15px; color: var(--text-gray);">
+                            项目为商品房性质，拥有完整产权。在办理按揭贷款时，需准备好身份证、户口本、收入证明及征信报告。建议提前咨询银行了解当前的贷款利率政策，合理规划月供。
+                        </p>
+                        <a href="#" class="btn btn-outline" style="font-size: 14px; padding: 8px 16px;">咨询置业顾问</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <span>常见问题 (FAQ)</span>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item active" onclick="toggleFaq(this)">
+                        <div class="faq-question">合和新城目前的在售楼栋有哪些？</div>
+                        <div class="faq-answer">目前项目主要在售的是后期高层住宅组团，具体楼栋号及剩余房源情况，建议联系现场置业顾问获取最新动态。</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">周边的配套什么时候能完全成熟？</div>
+                        <div class="faq-answer">合和新城自带商业配套已投入使用，学校及公园等市政配套已基本就绪，随着周边区域的发展，生活氛围将日益浓厚。</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">小区的物业管理如何？</div>
+                        <div class="faq-answer">由合和物业进行统一管理，服务标准较高，提供24小时安保巡逻、定期清洁及维修服务，致力于为业主打造安全舒适的居住环境。</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">二手房交易需要注意什么？</div>
+                        <div class="faq-answer">二手房交易需核实房屋产权是否清晰、是否有抵押或查封情况。建议通过正规中介机构办理，并仔细查看房屋质量及设施设备状况。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于合和新城</h4>
+                    <p style="font-size: 14px; line-height: 1.8;">合和新城致力于打造花都区宜居典范，提供高品质的居住环境和完善的生活配套，是您安家置业的理想选择。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#overview">楼盘概况</a></li>
+                        <li><a href="#features">项目优势</a></li>
+                        <li><a href="#location">交通路线</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>咨询热线：020-1234 5678</li>
+                        <li>项目地址：广州市花都区新华街建设北路</li>
+                        <li>工作时间：周一至周日 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 花都区合和新城资讯门户. All Rights Reserved. 本页面为信息展示平台，不作为最终购房依据。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('main-nav').classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        function toggleFaq(element) {
+            // Close other items
+            const allItems = document.querySelectorAll('.faq-item');
+            allItems.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+            // Toggle clicked item
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+  </html>

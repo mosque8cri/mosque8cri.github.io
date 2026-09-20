@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>依附论-社会结构与权力关系的深度解析</title>
+    <meta name="description" content="依附论（Dependency Theory）首页：深入探讨拉美发展经济学与结构主义理论，分析核心-边缘关系、不平等交换及发展中国家在全球化中的结构性困境。提供理论溯源、核心观点与当代应用指南。">
+    <meta name="keywords" content="依附论, 发展经济学, 结构主义, 拉美经济学, 核心边缘理论, 不平等交换, 全球化">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e1e4e8;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #a93226;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grid Layouts */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Text Content Block */
+        .content-block {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .content-block h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+        }
+
+        .content-block ul {
+            list-style: none;
+        }
+
+        .content-block li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        .content-block li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Featured Topic */
+        .featured-box {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .featured-box strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #2980b9;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: #fff;
+        }
+
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-item.active .faq-question::before {
+            content: "+";
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">依附<span>论</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#intro" class="active">理论简介</a></li>
+                    <li><a href="#core">核心观点</a></li>
+                    <li><a href="#scholars">代表学者</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>理解依附：全球化中的结构性不平等</h1>
+            <p>依附论深刻揭示了发展中国家如何在全球经济体系中处于被动地位，以及“中心-边缘”关系如何决定发展路径。</p>
+            <a href="#intro" class="cta-button">探索理论核心</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- 理论简介 Section -->
+        <section id="intro">
+            <div class="section-title">
+                <h2>什么是依附论？</h2>
+                <p>依附论是20世纪60年代兴起于拉美的一种发展经济学理论，旨在解释为何尽管全球经济增长，许多发展中国家却长期陷入贫困。</p>
+            </div>
+            
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>历史背景</h3>
+                    <p>该理论兴起于拉美经济委员会（ECLAC）时期，针对当时拉美国家在二战后试图通过进口替代工业化（ISI）实现现代化却屡屡受挫的现象。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🔗</div>
+                    <h3>核心逻辑</h3>
+                    <p>它认为全球资本主义体系是一个整体，发达国家（中心）通过贸易、投资和金融控制，从发展中国家（边缘）攫取剩余价值，导致后者无法独立发展。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>现实意义</h3>
+                    <p>虽然早期版本已过时，但其关于不平等交换、资本外流和结构依赖的分析，至今仍是理解全球不平等和南南合作的重要视角。</p>
+                </article>
+            </div>
+
+            <div class="content-block">
+                <h3>依附论的主要论点</h3>
+                <p>依附论不仅仅是一个经济模型，更是一种对世界政治经济结构的批判。它强调，发展中国家的经济困境并非源于内部效率低下，而是源于其在国际分工中被强行锁定在低端环节。</p>
+                <br>
+                <ul>
+                    <li><strong>不平等交换：</strong>发达国家以高价出售工业制成品，以低价收购发展中国家的原材料，这种剪刀差剥削了边缘国家。</li>
+                    <li><strong>内向型发展障碍：</strong>由于受制于中心国家的市场和技术垄断，边缘国家难以实现真正的经济自主。</li>
+                    <li><strong>阶级与社会结构：</strong>依附关系往往导致国内形成依附性的精英阶层，他们与中心国家利益绑定，阻碍了社会变革。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 核心观点与模型 Section -->
+        <section id="core">
+            <div class="section-title">
+                <h2>核心概念解析</h2>
+                <p>深入理解依附论必须掌握其构建的几个关键分析维度。</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="content-block">
+                    <h3>中心-边缘结构</h3>
+                    <p>这是依附论最基础的分析框架。世界被划分为两个部分：<strong>中心国家</strong>（如欧美发达国家）和<strong>边缘国家</strong>（如拉美、非洲、部分亚洲国家）。</p>
+                    <div class="featured-box">
+                        <strong>结构本质：</strong>
+                        中心负责资本、技术和高附加值产品的生产与研发；边缘则被限制在初级产品（矿产、农业）的出口上，承担污染和贫困。
+                    </div>
+                </div>
+                <div class="content-block">
+                    <h3>工业化的两条路径</h3>
+                    <p>依附论指出，工业化的模式取决于该国与中心的关系：</p>
+                    <ul>
+                        <li><strong>依附性工业化：</strong>依附于中心国家的市场和技术，生产中心需要的配套产品，容易受制于人。</li>
+                        <li><strong>自主性工业化：</strong>试图通过进口替代或出口导向，减少对中心的经济依赖，建立独立的工业体系。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 代表学者 Section -->
+        <section id="scholars">
+            <div class="section-title">
+                <h2>重要理论家与流派</h2>
+                <p>依附论并非单一理论，而是一系列相关观点的集合。</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>劳尔·普雷比什</h3>
+                    <p><strong>阿根廷经济学家</strong></p>
+                    <p>提出了“中心-外围”模型。他认为由于技术进步在中心国加速，导致中心国工资上涨、商品价格上涨，而外围国工资相对固定，导致外围国商品价格相对中心国不断下跌（普雷比什-辛格假说）。</p>
+                </div>
+                <div class="card">
+                    <h3>恩里克·费尔南德斯</h3>
+                    <p><strong>墨西哥经济学家</strong></p>
+                    <p>提出了“依附性积累”概念。他指出，边缘国家的经济增长往往是中心国家危机的产物（如原料价格上涨），这种增长具有寄生性和不稳定性，无法解决根本矛盾。</p>
+                </div>
+                <div class="card">
+                    <h3>萨米尔·阿明</h3>
+                    <p><strong>埃及裔法国经济学家</strong></p>
+                    <p>将依附论提升为系统的世界体系理论。他主张必须打破资本主义世界体系的边界，通过“脱钩”实现真正的解放，提出了“普遍价值”的概念。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 Section -->
+        <section id="faq">
+            <div class="section-title">
+                <h2>常见问题（FAQ）</h2>
+                <p>关于依附论的常见误解与解答。</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">依附论是否认为全球化完全没有好处？</div>
+                <div class="faq-answer">
+                    并非如此。依附论承认全球化带来了技术扩散和贸易机会，但其核心批判在于这种全球化是由中心国家主导和定义的，导致边缘国家处于被剥削的地位，且这种地位很难通过传统的市场手段改变。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">依附论和世界体系理论是一回事吗？</div>
+                <div class="faq-answer">
+                    两者密切相关但有所不同。依附论（特别是拉美学派）更侧重于分析国家间的经济关系和阶级结构；而沃勒斯坦的世界体系理论则将分析范围扩大到全球范围内的社会、政治、军事和意识形态互动，构建了一个更庞大的结构模型。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">依附论在今天还有用吗？</div>
+                <div class="faq-answer">
+                    非常有用。虽然现代全球经济格局发生了变化（如新兴经济体的崛起），但关于“数字鸿沟”、“产业链低端锁定”以及“金融霸权”的讨论，本质上仍是依附论在当代的延续和应用。
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">
+                        本站致力于提供关于依附论等发展经济学的权威解读与学术资源，帮助读者理解全球政治经济的底层逻辑。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>相关主题</h4>
+                    <ul>
+                        <li><a href="#">国际政治经济学</a></li>
+                        <li><a href="#">拉美发展研究</a></li>
+                        <li><a href="#">新自由主义批判</a></li>
+                        <li><a href="#">南南合作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">理论溯源</a></li>
+                        <li><a href="#">经典文献</a></li>
+                        <li><a href="#">学术期刊</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 依附论深度解析平台. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他已打开的项（手风琴效果）
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
